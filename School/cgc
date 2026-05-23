@@ -1,0 +1,37 @@
+<div class="home" >
+            <h1 id="home" >Hi..</h1>
+            <p>
+                Here is this is the website I from class 11 student created for reflecting</p>
+                <h1>Shree Navajagriti chandi secondary school.</h1>
+                <a href="#about">Learn more about this our school</a>
+<p>...</p>
+<p>...</p>
+
+        </div>
+        <div class="About">
+            <h3 id="about"></h3>
+            <p>dvfvf</p>
+            <img src="images\433440324_866637915475422_7714001695177705418_n (1).jpg">
+
+        </div>
+        <div>
+            <h3 id="program">Programs</h3>
+            <div class="gallery-container">
+                <div class="main-photo">
+                    <img id="mainImage" src="images\564662164_1306084771530732_2824570211684911063_n.jpg" alt="Selected photo" onclick="showGallery()">
+                    <div class="click-prompt" id="prompt">**Click photo to see the rest of the gallery!**
+
+                    </div>
+                </div>
+                   <div class="thumbnail-gallery hidden" id="thumbnail-Gallery">
+                    <img src="images\561318543_1306084924864050_8091508854776677846_n.jpg" alt="Thumbnail 1" onclick="changeMainImage('images\564662164_1306084771530732_2824570211684911063_n.jpg')">
+                    <img src="images\562412031_1306083754864167_5188664292301644374_n.jpg" alt="Thumbnail 2" onclick="changeMainImage('')">
+                   </div>
+            </div>
+
+        </div>
+        <div>
+            <h3 id="contact">Contacts</h3>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico?_nc_eui2=AeFIc9J_WhGT8aalSNoR6DkgDLqwI5i5CZMMurAjmLkJk5z2D5wESfnsQCOUXECtpKqIP0ewCTBk2mCCgNqXYFT5">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" >
+        </div>

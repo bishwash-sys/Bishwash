@@ -1,0 +1,236 @@
+body
+{
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0vj6W8Ja2aqlDiZ-HVZOn4CDrrLqfl636__OJ-BwOok_sbvKCT87des&s) ;
+}
+nav {
+    background: #0a9396;
+    color: #ffffff;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+nav a:hover {
+    background: #94d2bd;
+    color: #001219;
+}
+section {
+    background: #ffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+blockquote{
+  border-left: 5px solid #2ecc71;
+  padding-left: 15 px;
+}
+
+div{
+    background-color: #ffff;
+  border: 50%;
+}
+img{
+  image-orientation: center;
+}
+header {
+    background: #005f73; /* A school-appropriate color */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 40px;
+}
+main.container {
+    padding: 20px 0;
+}
+h2 {
+    color: #005f73;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 5px;
+}
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #0a9396;
+}
+/* Footer Styles */
+footer {
+    background: #001219;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px
+   
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; /* Ensures a pointer cursor for the clickable item */
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hide all items in this class until the 'show' class is added by JS */
+.hidden-gallery-items {
+    display: none;
+    /* When JavaScript adds the 'show-items' class, these will display as a grid flow */
+    display: none; /* Allows grid items inside this div to flow into the main grid */
+}
+
+/* Make the trigger image have an overlay to prompt interaction */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    pointer-events: none; /* Allows the click to pass through to the parent div */
+}
+
+.visible-item:hover .overlay {
+    opacity: 1;
+    img-size: 60px;
+}
+
+/* The class toggled by JavaScript */
+.show-items {
+    display: contents; 
+}
+.p{
+    border:5px;
+}
+
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --accent:#118b93; /* teal color for button */
+  --muted:#6b6f77;
+  --radius:12px;
+  --input-border:#d6dde3;
+  --max-width:480px;
+  --pad:22px;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+$
+
+$
+.container{
+  width:100%;
+  max-width:var(--max-width);
+}
+%
+%
+/* Card / form */
+.contact-card{
+  background:var(--card);
+  padding:var(--pad);
+  border-radius:18px;
+  box-shadow:0 6px 20px rgba(17,17,17,0.06);
+  border:1px solid rgba(15,20,25,0.03);
+}
+
+/* labels and inputs */
+label{
+  display:block;
+  margin:10px 0 6px 0;
+  font-weight:600;
+  color:#34414a;
+  font-size:14px;
+}
+
+.required{ color:#d44; font-weight:700; margin-left:4px; font-size:13px; }
+
+/* inputs */
+input[type="text"],
+input[type="email"],
+textarea{
+  width:100%;
+  padding:14px 16px;
+  border-radius:12px;
+  border:1px solid var(--input-border);
+  background:#fff;
+  font-size:15px;
+  color:#1a2a30;
+  outline:none;
+  transition:box-shadow .15s, border-color .15s;
+}
+
+input:focus, textarea:focus{
+  border-color:rgba(17,139,147,0.25);
+  box-shadow:0 6px 18px rgba(17,139,147,0.08);
+}
+
+/* button */
+.btn{
+  display:block;
+  width:100%;
+  margin-top:18px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:14px;
+  font-size:17px;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:700;
+  box-shadow:0 6px 16px rgba(17,139,147,0.18);
+}
+
+.btn:disabled{
+  opacity:0.6;
+  cursor:not-allowed;
+}
+
+/* status message */
+.status{
+  margin-top:12px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* responsive tweaks */
+@media (max-width:420px){
+  :root{ --pad:16px; --max-width:420px;}
+  .title{ font-size:24px; }
+}

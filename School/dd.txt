@@ -1,0 +1,21 @@
+%
+.title{
+  font-size:28px;
+  margin:0 0 14px 0;
+  font-weight:700;
+  color:#203040;
+  text-align:left;
+}
+%
+$
+body{
+  margin:0;
+  background:linear-gradient(#f3f6f8,#f7f9fb);
+  color:#263238;
+  display:flex;
+  min-height:100vh;
+  align-items:flex-start;
+  justify-content:center;
+  padding:32px 16px;
+}
+$
